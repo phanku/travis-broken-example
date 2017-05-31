@@ -10,6 +10,10 @@ class Test extends PHPUnit_Framework_TestCase
 		$this->stuff = new stuff();
 	}
 
+	public function testStuff() {
+		$this->assertEquals($this->stuff(1,1), 2);
+	}
+
   	public function testTwoPlusTwo() { 
   		$this->assertEquals(2+2, 4);
   	}
