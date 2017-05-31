@@ -1,0 +1,12 @@
+{
+    "name": "phanku/travis-broken-example",
+    "require": {
+        "phpunit/phpunit": "^6.1"
+    },
+    "authors": [
+        {
+            "name": "Joe Pahl",
+            "email": "phanku@vt.edu"
+        }
+    ]
+}
