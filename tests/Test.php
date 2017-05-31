@@ -2,9 +2,13 @@
 
 class Test extends PHPUnit_Framework_TestCase
 {
-	// public function testOnePlusOne() {
-	// 	$this->assertEquals(1+1,1);
- //  	}
+		
+	protected $stuff; 
+
+	public function setUp() {
+		require_once('../stuff.php');
+		$this->stuff = new stuff();
+	}
 
   	public function testTwoPlusTwo() { 
   		$this->assertEquals(2+2, 4);
