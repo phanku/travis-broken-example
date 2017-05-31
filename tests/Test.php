@@ -5,13 +5,13 @@ class Test extends PHPUnit_Framework_TestCase
 		
 	protected $stuff; 
 
-	public function setUpBeforeClass() {
+	public function setUp() {
 		require_once('stuff.php');
 		$this->stuff = new stuff();
 	}
 
 	public function testStuff() {
-		$this->assertEquals($this->add(1,1), 2);
+		$this->assertEquals($this->stuff->add(1,1), 2);
 	}
 
   	public function testTwoPlusTwo() { 
